@@ -3,7 +3,7 @@
 }
 
 /* Estilos gerais do corpo */
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,48 +16,58 @@ header {
     align-items: center;
     padding: 15px 20px;
     width: auto;
-    
+
 }
 
 header div {
     display: flex;
-    gap: 40px; /* Espaçamento entre os elementos */
+    gap: 40px;
+    /* Espaçamento entre os elementos */
 }
 
-header div:last-child{
+header div:last-child {
     justify-content: right;
     display: flex;
     align-items: right;
-    gap: 20px; /* Espaçamento entre os elementos */
+    gap: 20px;
+    /* Espaçamento entre os elementos */
 }
 
 header strong {
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
     display: flex;
     color: #000;
     font-family: "Passion One";
-    font-size: 30px; /* Tamanho do texto */
+    font-size: 30px;
+    /* Tamanho do texto */
 }
 
 header a {
-    display: inline-flex; /* Garante que os elementos estejam na mesma linha */
-    align-items: center; /* Alinha verticalmente */
-    text-decoration: none; /* Remove o sublinhado do texto */
-    color: black; /* Cor do texto */
-    font-size: 16px; /* Tamanho do texto */
-    margin: 0 10px; /* Espaçamento entre os elementos */
+    display: inline-flex;
+    /* Garante que os elementos estejam na mesma linha */
+    align-items: center;
+    /* Alinha verticalmente */
+    text-decoration: none;
+    /* Remove o sublinhado do texto */
+    color: black;
+    /* Cor do texto */
+    font-size: 16px;
+    /* Tamanho do texto */
+    margin: 0 10px;
+    /* Espaçamento entre os elementos */
 }
 
 header a:hover {
-    color: #ff6600; /* Destaque ao passar o rato */
+    color: #ff6600;
+    /* Destaque ao passar o rato */
 }
 
 /*--------------------------------------------------------------------ImagemHomePage-----------------------------------------------------------------------*/
 .hero-section {
     position: relative;
-    background-image: url('../Image_HomePage.png');
+    background-image: url('/img/Image_HomePage.png');
     background-size: cover;
     background-position: center;
     text-align: left;
@@ -65,41 +75,52 @@ header a:hover {
 }
 
 .hero-section h1 {
-    top: 10px; /* Distância do topo */
-    left: 30px; /* Distância da esquerda */
-    position: absolute; /* Permite posicionamento manual */
+    top: 10px;
+    /* Distância do topo */
+    left: 30px;
+    /* Distância da esquerda */
+    position: absolute;
+    /* Permite posicionamento manual */
     font-size: 36px;
     background-color: transparent;
-    color:#D1D1D1;
-    
+    color: #D1D1D1;
+
 }
 
 .hero-section p {
-    top: 80px; /* Distância do topo */
-    left: 30px; /* Distância da esquerda */
-    position: absolute; /* Permite posicionamento manual */
+    top: 80px;
+    /* Distância do topo */
+    left: 30px;
+    /* Distância da esquerda */
+    position: absolute;
+    /* Permite posicionamento manual */
     margin: 10px 0;
     background-color: transparent;
-    color:#D1D1D1;
+    color: #D1D1D1;
     font-size: 36px;
 }
 
 .hero-section button {
-    top: 140px; /* Distância do topo */
-    left: 30px; /* Distância da esquerda */
-    position: absolute; /* Permite posicionamento manual */
+    top: 140px;
+    /* Distância do topo */
+    left: 30px;
+    /* Distância da esquerda */
+    position: absolute;
+    /* Permite posicionamento manual */
     margin-top: 10px;
     padding: 20px 85px;
     border: none;
     cursor: pointer;
     background-color: transparent;
-    color:#D1D1D1;
+    color: #D1D1D1;
     border: 1px solid #D1D1D1;
 }
+
 /*--------------------------------------------------------------------Principal-------------------------------------------------------------------------------*/
 
 .product-section {
-    position: relative; /* Para que o link "View all" seja posicionado em relação a essa secção */
+    position: relative;
+    /* Para que o link "View all" seja posicionado em relação a essa secção */
     padding-top: 50px;
     margin: 20px;
 }
@@ -113,8 +134,10 @@ header a:hover {
 
 .view-all {
     position: absolute;
-    top: 100px; /* Distância do topo */
-    right: 100px; /* Distância da direita */
+    top: 100px;
+    /* Distância do topo */
+    right: 100px;
+    /* Distância da direita */
     font-size: 14px;
     color: #000000;
     font-weight: bold;
@@ -133,14 +156,16 @@ header a:hover {
     background-color: white;
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: left; /* Centraliza o conteúdo dentro do card */
+    text-align: left;
+    /* Centraliza o conteúdo dentro do card */
     flex: 1 1 calc(25% - 20px);
     box-sizing: border-box;
     position: relative;
 }
 
 .product-body {
-    margin-top: 15px; /* Espaço para o título do produto e preço não se sobreporem */
+    margin-top: 15px;
+    /* Espaço para o título do produto e preço não se sobreporem */
 }
 
 .product-card img {
@@ -161,7 +186,8 @@ header a:hover {
 
 .product-card p.Top-Left-text2 {
     position: absolute;
-    top: 30px; /* Ajuste conforme necessário */
+    top: 30px;
+    /* Ajuste conforme necessário */
     left: 10px;
     margin: 0;
     font-size: 16px;
@@ -170,15 +196,19 @@ header a:hover {
 
 .product-card p {
     margin: 5px 0;
-    top: 10px; /* Posição no topo */
-    left: 10px; /* Posição no lado esquerdo */
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    top: 10px;
+    /* Posição no topo */
+    left: 10px;
+    /* Posição no lado esquerdo */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fundo branco semi-transparente */
     padding: 5px 10px;
 }
 
 .product-card button {
     display: flex;
-    justify-content: center; /* Centraliza a imagem dentro do botão */
+    justify-content: center;
+    /* Centraliza a imagem dentro do botão */
     align-items: center;
     background: transparent;
     border: none;
@@ -191,20 +221,25 @@ header a:hover {
     display: block;
     margin: 0 auto;
     background-color: white;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /*--------------------------------------------------------------------Rodapé-------------------------------------------------------------------------------*/
 footer {
-    display: flex; /* Habilita Flexbox para organizar os elementos no rodapé */
-    justify-content: space-between; /* Coloca os elementos nos cantos */
-    align-items: flex-start; /* Alinha os itens no topo do rodapé */
-    padding: 20px; /* Espaçamento interno */
-    margin-top: auto; /* Garante que o rodapé fique no final da página */
+    display: flex;
+    /* Habilita Flexbox para organizar os elementos no rodapé */
+    justify-content: space-between;
+    /* Coloca os elementos nos cantos */
+    align-items: flex-start;
+    /* Alinha os itens no topo do rodapé */
+    padding: 20px;
+    /* Espaçamento interno */
+    margin-top: auto;
+    /* Garante que o rodapé fique no final da página */
 }
 
 /*Fonte e margem do titulo "Support"*/
-.support h2{
+.support h2 {
     font-size: 17px;
     margin-bottom: 10px;
 }
