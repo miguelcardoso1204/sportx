@@ -163,14 +163,14 @@ div.imgStyle img {
     width: 30%;
     /* Largura da seção de totais */
     padding: 20px;
-    background-color: #fff;
+    background-color: #D9D9D9;
     /* Fundo branco */
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .cart-totals span {
-    background-color: #fff;
+    background-color: #D9D9D9;
 
 }
 
@@ -178,7 +178,7 @@ div.imgStyle img {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
-    background-color: #fff;
+    background-color: #D9D9D9;
     /* Fundo branco para as zonas de texto */
     padding: 5px 0;
 }
