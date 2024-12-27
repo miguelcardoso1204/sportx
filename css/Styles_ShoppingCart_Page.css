@@ -64,8 +64,148 @@ header a:hover {
     /* Destaque ao passar o rato */
 }
 
+/*--------------------------------------------------------------------Main-------------------------------------------------------------------------------*/
+
+h1 {
+    padding: 1rem 7rem;
+    font-size: 20px
+}
+
+div.table1 {
+    padding: 1rem 7rem;
+    background: #D1D1D1;
+    display: flex;
+    gap: 20px;
+
+}
+
+div.table1 table {
+    width: 50%
+}
+
+table {
+    border-collapse: collapse;
+}
 
 
+td {
+    padding: 10px 10px;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+td.product_info {
+    text-align: left;
+}
+
+div.table1 td {
+    border-bottom: 1px solid #4A4A4A;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div.imgStyle {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+    align-content: center;
+
+}
+
+div.imgStyle img {
+    margin: 10px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+    width: 70px;
+    height: 90px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.quantity-controls button {
+    /*padding: 3px 8px;*/
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #6A6A6A;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.quantity-controls button:hover {
+    background-color: #45a049;
+}
+
+.quantity-controls input {
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #D1D1D1;
+    border-radius: 3px;
+}
+
+/* Remove as setas do input */
+.quantity-controls input[type=number]::-webkit-inner-spin-button,
+.quantity-controls input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cart-totals {
+    height: fit-content;
+    width: 30%;
+    /* Largura da seção de totais */
+    padding: 20px;
+    background-color: #fff;
+    /* Fundo branco */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-totals span {
+    background-color: #fff;
+
+}
+
+.totals-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color: #fff;
+    /* Fundo branco para as zonas de texto */
+    padding: 5px 0;
+}
+
+.line {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    /* Fundo verde */
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+}
 
 /*--------------------------------------------------------------------Rodapé-------------------------------------------------------------------------------*/
 
