@@ -60,7 +60,7 @@ header a {
 }
 
 header a:hover {
-    color: #ff6600;
+    color: #218A38;
     /* Destaque ao passar o rato */
 }
 
@@ -100,7 +100,7 @@ header a:hover {
     font-size: 36px;
 }
 
-.hero-section button {
+.hero-section button{
     top: 140px;
     /* Distância do topo */
     left: 30px;
@@ -130,6 +130,7 @@ header a:hover {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-left: 100px;
 }
 
 .view-all {
@@ -203,25 +204,6 @@ header a:hover {
     background-color: rgba(255, 255, 255, 0.8);
     /* Fundo branco semi-transparente */
     padding: 5px 10px;
-}
-
-.product-card button {
-    display: flex;
-    justify-content: center;
-    /* Centraliza a imagem dentro do botão */
-    align-items: center;
-    background: transparent;
-    border: none;
-    width: auto;
-}
-
-.product-card button img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    background-color: white;
-    cursor: pointer;
 }
 
 /*--------------------------------------------------------------------Rodapé-------------------------------------------------------------------------------*/
