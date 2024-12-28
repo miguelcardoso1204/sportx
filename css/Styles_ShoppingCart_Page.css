@@ -16,7 +16,6 @@ header {
     align-items: center;
     padding: 15px 20px;
     width: auto;
-
 }
 
 header div {
@@ -60,7 +59,7 @@ header a {
 }
 
 header a:hover {
-    color: #ff6600;
+    color: #218A38;
     /* Destaque ao passar o rato */
 }
 
@@ -164,9 +163,6 @@ div.imgStyle img {
     /* Largura da seção de totais */
     padding: 20px;
     background-color: #D9D9D9;
-    /* Fundo branco */
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .cart-totals span {
