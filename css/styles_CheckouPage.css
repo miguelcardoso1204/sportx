@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-/*--------------------------------------------------------------------Cabeçalho-------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------HEADER-------------------------------------------------------------------------------*/
 header {
     justify-content: space-between;
     display: flex;
@@ -64,109 +64,39 @@ header a:hover {
     /* Destaque ao passar o rato */
 }
 
-/*--------------------------------------------------------------------Main-------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------MAIN-------------------------------------------------------------------------------*/
 
-h1 {
-    padding: 1rem 7rem;
-    font-size: 20px
+.container {
+    display: grid;
+    grid-template-columns: 0.6fr auto;
+    /* Duas colunas */
+    gap: 10px;
+    /* Espaçamento entre colunas */
 }
 
-div.table1 {
-    padding: 1rem 7rem;
-    background: #D1D1D1;
+.left-column {
+
     display: flex;
-    gap: 20px;
+    flex-direction: column;
 
-}
-
-div.table1 table {
-    width: 50%
-}
-
-table {
-    border-collapse: collapse;
+    /* Empilha as 3 divs verticalmente */
 }
 
 
-td {
-    padding: 10px 10px;
-    text-align: center;
-    text-align: -webkit-center;
-}
-
-td.product_info {
-    text-align: left;
-}
-
-div.table1 td {
-    border-bottom: 1px solid #4A4A4A;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-div.imgStyle {
-    border-radius: 5px;
-    background-color: #ffffff;
-    width: 100px;
-    height: 100px;
-    align-content: center;
-
-}
-
-div.imgStyle img {
-    margin: 10px;
-    margin-left: 15px;
-    margin-bottom: 12px;
-    width: 70px;
-    height: 90px;
-}
-
-.quantity-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.quantity-controls button {
-    /*padding: 3px 8px;*/
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    background-color: #6A6A6A;
-    color: black;
-    border: none;
-    border-radius: 5px;
-}
-
-.quantity-controls button:hover {
-    background-color: #45a049;
-}
-
-.quantity-controls input {
-    width: 30px;
-    text-align: center;
-    font-size: 14px;
-    border: 1px solid #D1D1D1;
-    border-radius: 3px;
-}
-
-/* Remove as setas do input */
-.quantity-controls input[type=number]::-webkit-inner-spin-button,
-.quantity-controls input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 
 .cart-totals {
+    align-self: flex-end;
     height: fit-content;
-    width: 30%;
+    width: 60%;
     /* Largura da seção de totais */
     padding: 20px;
     background-color: #D9D9D9;
     /* Fundo branco */
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    margin-left: 15%;
 }
 
 .cart-totals span {
@@ -207,7 +137,77 @@ div.imgStyle img {
     background-color: #45a049;
 }
 
-/*--------------------------------------------------------------------Rodapé-------------------------------------------------------------------------------*/
+.personal-info {
+    height: fit-content;
+    width: 80%;
+    /* Largura da seção de totais */
+    padding: 20px;
+    background-color: #D9D9D9;
+    /* Fundo branco */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 50px 0 0 5%
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    /* Espaço entre os campos */
+
+    background-color: #D9D9D9;
+}
+
+.row1 {
+    display: flex;
+    gap: 10px;
+    /* Espaço entre os campos */
+
+    background-color: #D9D9D9;
+}
+
+.Pinfo-item input {
+    background-color: #ffffff;
+    border: #ffffff;
+    width: 96%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.Pinfo-item {
+    background-color: #D9D9D9;
+}
+
+.Pinfo-item label {
+    background-color: #D9D9D9;
+}
+
+.radio-input {
+    background-color: #D9D9D9;
+    margin-bottom: 5px;
+}
+
+.radio-input label {
+    background-color: #D9D9D9;
+}
+
+.row .Pinfo-item {
+    width: -webkit-fill-available;
+}
+
+.row .Pinfo-item input {
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+
+.row1 .Pinfo-item input {
+    padding-bottom: 7.3%;
+    padding-top: 7.3%;
+}
+
+
+
+/*--------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------*/
 
 footer {
     display: flex;
