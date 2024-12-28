@@ -21,10 +21,23 @@
         </div>
         <div>
             <a href="#">PT | EN</a>
-            <a href="#"><img src="/img/shopping-cart.jpg"></a>
-            <a href="#"><img src="/img/account_circle.jpg"></a>
+            <a href="ShoppingCart_Page.html"><img src="/img/shopping-cart.jpg"></a>
+            <a href="#" id="profileButton"><img src="/img/account_circle.jpg" alt="Profile"></a>
         </div>
     </header>
+
+    <!-- Popup Menu -->
+    <div id="profilePopup" class="popup">
+        <div class="popup-content">
+            <p>Gill Bates</p>
+            <p>gillbates@hotmail.com</p>
+            <a href="#">Order History</a>
+            <a href="#">Stock Management</a>
+            <a href="#">User Management</a>
+            <a href="Loginpage.html">Log Out</a>
+        </div>
+    </div>
+
 
     <main>
         <h1>Shopping Cart</h1>
@@ -202,6 +215,7 @@
             </form>
         </section>
     </footer>
+    <script src="/js/PopupProfile.js"></script>
 </body>
 
 </html>
