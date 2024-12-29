@@ -17,7 +17,7 @@
         <div>
             <a href="#">Products</a>
             <a href="#">Sale</a>
-            <a href="#">Search</a>
+            <a href="#" id="searchButton">Search</a>
         </div>
         <div>
             <a href="#">PT | EN</a>
@@ -36,6 +36,19 @@
             <a href="AdminPage_UserManagement.html">User Management</a>
             <a href="Loginpage.html">Log Out</a>
         </div>
+    </div>
+
+    <!-- Popup Search  -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+    </div>
+    
+    <div class="hero-section">
+        <h1>Hiking Gear:</h1>
+        <p>Explore our brand new selection!</p>
+        <button>Explore</button>
     </div>
 
     <main>
@@ -122,6 +135,6 @@
             </form>
         </section>
     </footer>
-
+    <script src="/js/PopupSearch.js"></script>
     <script src="/js/PopupProfile.js"></script>
 </body>

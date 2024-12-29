@@ -64,7 +64,7 @@ header a:hover {
     /* Destaque ao passar o rato */
 }
 
-/* Popup Styles */
+/* Popup Styles profile */
 .popup {
     display: none; /* Inicialmente oculto */
     position: absolute;
@@ -91,6 +91,41 @@ header a:hover {
 
 .popup-content a:hover {
     color: #218A38;
+}
+
+/* Popup Styles search */
+/* Modal styles */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent; 
+    padding-top: -200px;
+}
+
+.modal-content {
+    background-color: transparent;
+    margin: -1.5% 35%;
+    padding: 20px;
+    width: 80%; 
+    max-width: 400px; 
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
 }
 
 /*--------------------------------------------------------------------ImagemHomePage-----------------------------------------------------------------------*/
