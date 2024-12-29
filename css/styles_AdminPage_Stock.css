@@ -60,198 +60,211 @@ header a {
 }
 
 header a:hover {
-    color: #218A38;
+    color: #ff6600;
     /* Destaque ao passar o rato */
 }
 
-/* Popup Styles */
-.popup {
-    display: none;
-    /* Inicialmente oculto */
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    border: 2px solid #4CAF50;
-    /* Aqui estamos adicionando uma borda verde */
-    border-radius: 8px;
-    /* Bordas arredondadas */
-    padding: 15px;
-    width: 200px;
-    z-index: 1000;
-}
-
-.popup-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.popup-content a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-}
-
-.popup-content a:hover {
-    color: #218A38;
-}
 
 /*--------------------------------------------------------------------MAIN-------------------------------------------------------------------------------*/
 
-.container {
-    display: grid;
-    grid-template-columns: 0.6fr auto;
-    /* Duas colunas */
-    gap: 10px;
-    /* Espaçamento entre colunas */
-}
-
-.left-column {
-
-    display: flex;
-    flex-direction: column;
-
-    /* Empilha as 3 divs verticalmente */
-}
-
-
-
-.cart-totals {
-    align-self: flex-end;
+.select-container {
     height: fit-content;
-    width: 60%;
-    /* Largura da seção de totais */
     padding: 20px;
-    background-color: #D9D9D9;
-    /* Fundo branco */
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-
-    margin-left: 15%;
+    margin-left: 9%;
 }
 
-.cart-totals span {
-    background-color: #D9D9D9;
-
-}
-
-.totals-item {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-    background-color: #D9D9D9;
-    /* Fundo branco para as zonas de texto */
-    padding: 5px 0;
-}
-
-.line {
-    border-top: 1.5px solid #000000;
-    margin: 10px 0;
-}
-
-.checkout-btn {
-    display: block;
-    width: 100%;
+.select-container select {
+    width: 13%;
     padding: 10px;
-    background-color: #4CAF50;
-    /* Fundo verde */
-    color: white;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
+    border: #D1D1D1;
+    background-color: #d9d9d9;
 }
 
-.checkout-btn:hover {
-    background-color: #45a049;
-}
-
-.personal-info1 {
-    height: fit-content;
-    width: 80%;
-    /* Largura da seção de totais */
-    padding: 20px;
-    background-color: #D9D9D9;
-    /* Fundo branco */
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    margin: 50px 0 0 5%
-}
-
-.personal-info {
-    height: fit-content;
-    width: 80%;
-    /* Largura da seção de totais */
-    padding: 20px;
-    background-color: #D9D9D9;
-    /* Fundo branco */
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    margin: 25px 0 0 5%
-}
-
-
-.row {
-    display: flex;
-    gap: 10px;
-    /* Espaço entre os campos */
-
-    background-color: #D9D9D9;
+.search-bar input {
+    width: 11.9%;
+    padding: 10px;
+    border: #D1D1D1;
+    background-color: #d9d9d9;
 }
 
 .row1 {
     display: flex;
-    gap: 10px;
-    /* Espaço entre os campos */
+    background-color: #d9d9d9;
+    margin-bottom: 10px;
+    width: 1344px;
+    height: 104px;
 
-    background-color: #D9D9D9;
 }
 
-.Pinfo-item input {
+.table-container {
+    padding: 10px;
+    margin: 20px 10% 50px 10%;
+    background-color: #D1D1D1;
+}
+
+.column {
+    flex: 50%;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.column-edit-icon {
+    flex: 30%;
+    background-color: #d9d9d9;
+    text-align: right;
+
+}
+
+.column-delete-icon {
+    flex: 30%;
+    background-color: #d9d9d9;
+    text-align: center;
+
+}
+
+.column-img {
+    flex: 22%;
+    background-color: #d9d9d9;
+    text-align: center;
+
+}
+
+.column-description {
+    padding-top: 20px;
+    padding-left: 10px;
+    flex: 50%;
+    background-color: #d9d9d9;
+}
+
+.column-description label {
+    background-color: #d9d9d9;
+}
+
+
+button.btn-edit {
+    border: #d9d9d9;
+    background-color: #d9d9d9;
+    margin-top: 33px;
+    padding: 0%;
+}
+
+
+
+button.btn-update-stock {
+    padding: 20px;
+    border: #D1D1D1;
     background-color: #ffffff;
-    border: #ffffff;
-    width: 96%;
-    padding: 2%;
+    margin-top: 22px;
+    width: 60%;
+
 
 }
 
-.Pinfo-item {
-    background-color: #D9D9D9;
-    margin-bottom: 10px;
-}
+.report-links {
+    margin: 0px 19% 0px 10%;
+    text-align: end;
+    padding-right: 10px;
 
-.Pinfo-item label {
-    background-color: #D9D9D9;
-}
-
-.radio-input {
-    background-color: #D9D9D9;
-    margin-bottom: 10px;
-}
-
-.radio-input label {
-    background-color: #D9D9D9;
-}
-
-.row .Pinfo-item {
-    width: -webkit-fill-available;
-}
-
-.row .Pinfo-item input {
-    padding-bottom: 4%;
-    padding-top: 4%;
-}
-
-.row1 .Pinfo-item input {
-    padding-bottom: 7.3%;
-    padding-top: 7.3%;
 }
 
 
+/* Modal container */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* Oculto por padrão */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mostrar modal quando ativado */
+.modal.active {
+    display: flex;
+    /* Exibe o modal */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.input-container {
+    margin: 15px 0;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botão para fechar */
+.close-modal-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-modal-btn:hover {
+    background-color: #a71d2a;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    color: #218A38;
+}
+
+/* Estilo do número ativo com borda */
+.pagination a.active {
+    padding: 5px 8px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #D1D1D1;
+    font-weight: bold;
+    color: #000000;
+}
+
+.pagination span {
+    font-size: 16px;
+}
 
 /*--------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------*/
 
