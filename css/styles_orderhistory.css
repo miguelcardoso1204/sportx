@@ -1,12 +1,13 @@
 * {
-    background: #D1D1D1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilos gerais do corpo */
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #D1D1D1;
 }
 
 /*--------------------------------------------------------------------Cabeçalho-------------------------------------------------------------------------------*/
@@ -16,13 +17,11 @@ header {
     align-items: center;
     padding: 15px 20px;
     width: auto;
-
 }
 
 header div {
     display: flex;
-    gap: 40px;
-    /* Espaçamento entre os elementos */
+    gap: 40px;/* Espaçamento entre os elementos */
 }
 
 header div:last-child {
@@ -97,6 +96,7 @@ header a:hover {
 /* Order History Section */
 .order-history {
     padding: 30px;
+    background-color: #D1D1D1;
     border-radius: 8px;
     max-width: 1000px;
     margin: 30px auto;
@@ -123,10 +123,9 @@ header a:hover {
 
 /* Order Card */
 .order-card {
-    border-bottom: 5px solid #000000;
+    background-color: #fff; /* Fundo branco */
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 3px;
 }
 
 .order-header {
