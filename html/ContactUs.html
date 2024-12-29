@@ -54,40 +54,48 @@
 
             <div class="contact-form">
                 <form action="/submit-message" method="POST">
-                    <div class="form-group">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                    <div class="form-group inline">
+                        <div class="inline-item1">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="inline-item2">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" required>
+            
+                    <div class="form-group inline">
+                        <div class="inline-item1">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="inline-item2">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
                     </div>
-
+            
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label>Select Subject</label>
+                        <div class="subject-options">
+                            <label>
+                                <input type="radio" name="subject" value="general" required> General Inquiry
+                            </label>
+                            <label>
+                                <input type="radio" name="subject" value="support"> Support
+                            </label>
+                            <label>
+                                <input type="radio" name="subject" value="feedback"> Feedback
+                            </label>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="text" id="phone" name="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Select Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="general">General Inquiry</option>
-                            <option value="support">Support</option>
-                            <option value="feedback">Feedback</option>
-                        </select>
-                    </div>
-
+            
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" required></textarea>
                     </div>
-
+            
                     <button type="submit">Send Message</button>
                 </form>
             </div>
