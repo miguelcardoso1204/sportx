@@ -124,6 +124,7 @@ header a:hover {
 /* Popup Styles search */
 /* Modal styles */
 .modal {
+    background-color: #D1D1D1;
     display: none; /* Initially hidden */
     position: fixed;
     z-index: 1;
@@ -134,11 +135,12 @@ header a:hover {
     overflow: auto;
     background-color: transparent; 
     padding-top: -200px;
+    background-color: ;
 }
 
 .modal-content {
     background-color: transparent;
-    margin: -1.5% 35%;
+    margin: -1.5% 36%;
     padding: 20px;
     width: 80%; 
     max-width: 400px; 
@@ -151,6 +153,7 @@ header a:hover {
 }
 
 input[type="text"] {
+    background-color: #D1D1D1;
     width: 80%;
     padding: 10px;
     margin: 20px 0;
