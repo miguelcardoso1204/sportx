@@ -153,6 +153,7 @@ header a:hover {
 
 /* Estilo para campos em linha */
 .inline {
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -162,6 +163,7 @@ header a:hover {
 .inline-item1,
 .inline-item2 {
     width: 48%;
+    font-weight: bold;
 }
 
 /* Estilo para labels */
@@ -169,6 +171,7 @@ header a:hover {
     font-size: 14px;
     margin-bottom: 5px;
     display: block;
+    font-weight: bold;
 }
 
 /* Estilo para campos de entrada */

@@ -211,6 +211,10 @@ div.imgStyle img {
     margin: 10px 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .checkout-btn {
     display: block;
     width: 100%;
