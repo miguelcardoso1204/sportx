@@ -66,12 +66,15 @@ header a:hover {
 
 /* Popup Styles */
 .popup {
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     position: absolute;
     top: 50px;
     right: 20px;
-    border: 2px solid #4CAF50; /* Aqui estamos adicionando uma borda verde */
-    border-radius: 8px; /* Bordas arredondadas */
+    border: 2px solid #4CAF50;
+    /* Aqui estamos adicionando uma borda verde */
+    border-radius: 8px;
+    /* Bordas arredondadas */
     padding: 15px;
     width: 200px;
     z-index: 1000;
@@ -98,7 +101,7 @@ header a:hover {
 .select-container {
     height: fit-content;
     padding: 20px;
-    margin-left: 9%;
+    margin-left: 10%;
 }
 
 .select-container select {
@@ -119,8 +122,7 @@ header a:hover {
     display: flex;
     background-color: #d9d9d9;
     margin-bottom: 10px;
-    width: 1344px;
-    height: 104px;
+
 
 }
 
@@ -189,7 +191,7 @@ button.btn-update-stock {
 }
 
 .report-links {
-    margin: 0px 19% 0px 10%;
+    margin: 0px 10% 0px 10%;
     text-align: end;
     padding-right: 10px;
 
@@ -220,32 +222,42 @@ button.btn-update-stock {
 .modal-content {
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: auto;
     text-align: center;
+
 }
 
 .modal-content h3 {
     margin-top: 0;
+    background: #ffffff;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Define duas colunas */
+    gap: 10px;
+    /* Espaçamento entre os campos */
+    background: #ffffff;
 }
 
 .input-container {
     margin: 15px 0;
+    background: #ffffff;
 }
 
 .input-label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    background: #ffffff;
 }
 
 .input-field {
-    width: 100%;
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
 /* Botão para fechar */
@@ -255,12 +267,24 @@ button.btn-update-stock {
     background-color: #dc3545;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 .close-modal-btn:hover {
     background-color: #a71d2a;
+}
+
+.add-modal-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #45a049;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-modal-btn:hover {
+    background-color: #296c2b;
 }
 
 /* Pagination */

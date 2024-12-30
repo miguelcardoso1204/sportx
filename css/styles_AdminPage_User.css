@@ -11,12 +11,15 @@ body {
 
 /* Popup Styles */
 .popup {
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     position: absolute;
     top: 50px;
     right: 20px;
-    border: 2px solid #4CAF50; /* Aqui estamos adicionando uma borda verde */
-    border-radius: 8px; /* Bordas arredondadas */
+    border: 2px solid #4CAF50;
+    /* Aqui estamos adicionando uma borda verde */
+    border-radius: 8px;
+    /* Bordas arredondadas */
     padding: 15px;
     width: 200px;
     z-index: 1000;
@@ -98,7 +101,7 @@ header a:hover {
 .select-container {
     height: fit-content;
     padding: 20px;
-    margin-left: 9%;
+    margin-left: 10%;
 }
 
 .select-container select {
@@ -119,15 +122,14 @@ header a:hover {
     display: flex;
     background-color: #d9d9d9;
     margin-bottom: 10px;
-    width: 1344px;
-    height: 104px;
+
     padding-left: 10px;
 
 }
 
 .table-container {
     padding: 10px;
-    margin: 20px 20% 50px 9.5%;
+    margin: 20px 10% 50px 10%;
     background-color: #D1D1D1;
 }
 
@@ -146,7 +148,7 @@ header a:hover {
 
 
 .column-description {
-    padding-top: 24px;
+    padding-top: 0.75%;
     padding-left: 10px;
     flex: 20%;
     background-color: #d9d9d9;
@@ -158,7 +160,7 @@ header a:hover {
 }
 
 .column-description1 {
-    padding-top: 24px;
+    padding-top: 0.75%;
     padding-left: 10px;
     flex: 40%;
     background-color: #d9d9d9;
@@ -171,7 +173,7 @@ header a:hover {
 }
 
 .column-description2 {
-    padding-top: 24px;
+    padding-top: 0.75%;
     padding-left: 10px;
     flex: 40%;
     background-color: #d9d9d9;
@@ -184,7 +186,7 @@ header a:hover {
 }
 
 .column-description3 {
-    padding-top: 24px;
+    padding-top: 0.75%;
     padding-left: 10px;
     flex: 40%;
     background-color: #d9d9d9;
@@ -197,7 +199,7 @@ header a:hover {
 }
 
 .column-description4 {
-    padding-top: 24px;
+    padding-top: 0.75%;
     padding-left: 10px;
     flex: 65%;
     background-color: #d9d9d9;
@@ -221,83 +223,15 @@ select.btn-update-status {
     padding: 20px;
     border: #D1D1D1;
     background-color: #ffffff;
-    margin-top: 22px;
+    margin-top: 5%;
     width: 100%;
 }
 
 .report-links {
-    margin: 0px 19% 0px 10%;
+    margin: 0px 10% 0px 10%;
     text-align: end;
     padding-right: 10px;
 
-}
-
-
-/* Modal container */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    /* Oculto por padrão */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Mostrar modal quando ativado */
-.modal.active {
-    display: flex;
-    /* Exibe o modal */
-}
-
-/* Conteúdo do modal */
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    text-align: center;
-}
-
-.modal-content h3 {
-    margin-top: 0;
-}
-
-.input-container {
-    margin: 15px 0;
-}
-
-.input-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.input-field {
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-/* Botão para fechar */
-.close-modal-btn {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.close-modal-btn:hover {
-    background-color: #a71d2a;
 }
 
 /* Pagination */

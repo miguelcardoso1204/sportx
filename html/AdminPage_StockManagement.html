@@ -200,47 +200,56 @@
             <div class="modal" id="stockModal">
                 <div class="modal-content">
                     <h3>Update Stock</h3>
-                    <div class="input-container">
-                        <label class="input-label">Size 38:</label>
-                        <input type="number" class="input-field" placeholder="Enter stock for size 38">
+                    <div class="input-grid">
+                        <div class="input-container">
+                            <label class="input-label">Size 36:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 38">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 37:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 38">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 38:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 38">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 39:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 39">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 40:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 40">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 41:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 41">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 42:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 42">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 43:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 43">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 44:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 44">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label">Size 45:</label>
+                            <input type="number" class="input-field" placeholder="Enter stock for size 45">
+                        </div>
                     </div>
-                    <div class="input-container">
-                        <label class="input-label">Size 39:</label>
-                        <input type="number" class="input-field" placeholder="Enter stock for size 39">
-                    </div>
-                    <div class="input-container">
-                        <label class="input-label">Size 40:</label>
-                        <input type="number" class="input-field" placeholder="Enter stock for size 40">
-                    </div>
-                    <div class="input-container">
-                        <label class="input-label">Size 41:</label>
-                        <input type="number" class="input-field" placeholder="Enter stock for size 41">
-                    </div>
-                    <div class="input-container">
-                        <label class="input-label">Size 42:</label>
-                        <input type="number" class="input-field" placeholder="Enter stock for size 42">
-                    </div>
-                    <div class="input-container">
-                        <label class="input-label">Size 43:</label>
-                        <input type="number" class="input-field" placeholder="Enter stock for size 43">
-                    </div>
-                    <a href="#" class="close-modal-btn">Close</a>
+                    <br>
+                    <a href="#" class="add-modal-btn" onclick="closeModal()">Add Stock</a>
+                    <a href="#" class="close-modal-btn" onclick="closeModal()">Cancel</a>
                 </div>
             </div>
 
 
-            <script>
-                // Função para abrir o modal
-                function openModal() {
-                    const modal = document.getElementById('stockModal');
-                    modal.classList.add('active');
-                }
-
-                // Função para fechar o modal
-                function closeModal() {
-                    const modal = document.getElementById('stockModal');
-                    modal.classList.remove('active');
-                }
+            <script src="/js/PopupStock.js">
             </script>
             <!-- Paginação -->
             <div class="pagination">
@@ -278,4 +287,5 @@
     </footer>
     <script src="/js/PopupProfile.js"></script>
 </body>
+
 </html>
