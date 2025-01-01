@@ -206,13 +206,13 @@ input[type="text"] {
 }
 
 .contact-info .icon {
-    width: 24px;
-    height: 24px;
     margin-right: 10px;
 }
 
 /* Ícones específicos */
 .contact-info .phone {
+    width: 24px;
+    height: 24px;
     background-image: url('/img/bxs_phone-call.jpg');
     background-size: cover;
 }
@@ -220,9 +220,13 @@ input[type="text"] {
 .contact-info .email {
     background-image: url('/img/email.jpg');
     background-size: cover;
+    width: 24px;
+    height: 24px;
 }
 
 .contact-info .address {
+    width: 20px;
+    height: 30px;
     background-image: url('/img/carbon_location-filled.jpg');
     background-size: cover;
 }
