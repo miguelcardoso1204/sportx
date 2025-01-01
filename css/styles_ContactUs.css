@@ -380,7 +380,6 @@ footer {
 /* Retirar borda ao clicar para inserir */
 .subscribe input:focus {
     outline: none;
-    background-color: ;
 }
 
 /*Botao subcrever*/
