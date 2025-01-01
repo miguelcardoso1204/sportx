@@ -373,12 +373,14 @@ footer {
 .subscribe input {
     margin-bottom: 30px;
     font-size: 15px;
+    background-color: #D1D1D1;
     border: 0.1px solid #cccccc;
 }
 
 /* Retirar borda ao clicar para inserir */
 .subscribe input:focus {
     outline: none;
+    background-color: ;
 }
 
 /*Botao subcrever*/

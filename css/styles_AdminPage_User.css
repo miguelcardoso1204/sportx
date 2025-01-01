@@ -326,6 +326,7 @@ footer {
 
 
 .subscribe input {
+    background-color: #D1D1D1;
     margin-bottom: 30px;
     font-size: 15px;
     border: 0.1px solid #cccccc;
