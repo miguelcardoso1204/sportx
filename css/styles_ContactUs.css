@@ -198,9 +198,33 @@ input[type="text"] {
     margin-bottom: 110px;
 }
 
-.contact-info p{
-    font-size: 18px;
+.contact-info p {
+    font-size: 16px;
     margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Ícones específicos */
+.contact-info .phone {
+    background-image: url('/img/bxs_phone-call.jpg');
+    background-size: cover;
+}
+
+.contact-info .email {
+    background-image: url('/img/email.jpg');
+    background-size: cover;
+}
+
+.contact-info .address {
+    background-image: url('/img/carbon_location-filled.jpg');
+    background-size: cover;
 }
 
 /* Estilo para o formulário de contato */
@@ -224,9 +248,13 @@ input[type="text"] {
     margin-bottom: 30px;
 }
 
-.inline-item1,
-.inline-item2 {
+.inline-item1{
     width: 48%;
+    font-weight: bold;
+}
+
+.inline-item2 {
+    width: 45%;
     font-weight: bold;
 }
 
