@@ -12,7 +12,8 @@ profileButton.addEventListener('click', function(event)
     if (popup.style.display === 'none' || popup.style.display === '') 
     {
         popup.style.display = 'block'; // Exibe o popup
-    } else 
+    } 
+    else 
     {
         popup.style.display = 'none'; // Oculta o popup
     }
