@@ -1,112 +1,262 @@
-/* Estilo básico para o corpo da página */
+* {
+    background: #D1D1D1;
+}
+
+html, body {
+    height: 100%; /* Garante que o HTML e o corpo ocupem toda a altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+}
+
+/* Estilos gerais do corpo */
 body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-/* Estilo para o cabeçalho */
+/*--------------------------------------------------------------------Cabeçalho-------------------------------------------------------------------------------*/
 header {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
     justify-content: space-between;
+    display: flex;
     align-items: center;
+    padding: 15px 20px;
+    width: auto;
+
+}
+
+header div {
+    display: flex;
+    gap: 40px;
+    /* Espaçamento entre os elementos */
+}
+
+header div:last-child {
+    justify-content: right;
+    display: flex;
+    align-items: right;
+    gap: 20px;
+    /* Espaçamento entre os elementos */
+}
+
+header strong {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    color: #000;
+    font-family: "Passion One";
+    font-size: 30px;
+    /* Tamanho do texto */
 }
 
 header a {
-    color: white;
+    display: inline-flex;
+    /* Garante que os elementos estejam na mesma linha */
+    align-items: center;
+    /* Alinha verticalmente */
     text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
+    /* Remove o sublinhado do texto */
+    color: black;
+    /* Cor do texto */
+    font-size: 16px;
+    /* Tamanho do texto */
+    margin: 0 10px;
+    /* Espaçamento entre os elementos */
 }
 
 header a:hover {
-    color: #f4f4f4;
+    color: #218A38;
+    /* Destaque ao passar o rato */
 }
 
-header #profileButton img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-/* Estilo para o menu pop-up do perfil */
+/* Popup Styles profile */
 .popup {
+    display: none; /* Inicialmente oculto */
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    display: none;
-    z-index: 100;
+    border: 2px solid #4CAF50; /* Aqui estamos adicionando uma borda verde */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px;
+    width: 200px;
+    z-index: 1000;
 }
 
 .popup-content {
-    padding: 10px;
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .popup-content a {
-    display: block;
-    padding: 10px;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: black;
+    font-size: 16px;
 }
 
 .popup-content a:hover {
-    background-color: #f1f1f1;
+    color: #218A38;
 }
 
-/* Estilo para o conteúdo do perfil */
+/* Popup Styles search */
+/* Modal styles */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent; 
+    padding-top: -200px;
+}
+
+.modal-content {
+    background-color: transparent;
+    margin: -1.5% 35%;
+    padding: 20px;
+    width: 80%; 
+    max-width: 400px; 
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+/* --------------------------------------------------Estilo para o conteúdo do perfil------------------------------------------------------------------------ */
 .profile-container {
     margin: 40px auto;
-    padding: 20px;
+    padding: 30px;
     width: 80%;
     max-width: 800px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #ffffff;
 }
 
 .profile-container h1 {
     text-align: center;
     color: #333;
+    font-size: 28px; /* Aumentar o tamanho do título */
+    font-weight: bold; /* Tornar o título mais destacado */
+    margin-bottom: 20px;
+    background-color: #ffffff;
 }
 
+/* Estilo da seção de informações do perfil */
 .profile-info {
     text-align: center;
     margin-top: 20px;
-}
-
-.profile-info img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    background-color: #ffffff;
 }
 
 .profile-info p {
     font-size: 16px;
     color: #333;
     margin: 5px 0;
+    background-color: #ffffff;
 }
 
 .profile-info strong {
-    color: #666;
+    color: #218A38; /* Cor mais suave para subtítulos */
+    font-weight: normal;
+    background-color: #ffffff;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .profile-container {
-        width: 90%;
-    }
-
-    .profile-info p {
-        font-size: 14px;
-    }
+.profile-info p:hover{
+    text-decoration: underline; /* Example: Underline the text on hover */
 }
+/*--------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------*/
+
+footer {
+    display: flex;
+    /* Habilita Flexbox para organizar os elementos no rodapé */
+    justify-content: space-between;
+    /* Coloca os elementos nos cantos */
+    align-items: flex-start;
+    /* Alinha os itens no topo do rodapé */
+    padding: 20px;
+    /* Espaçamento interno */
+    margin-top: auto;
+    /* Garante que o rodapé fique no final da página */
+}
+
+/*Fonte e margem do titulo "Support"*/
+.support h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/*mudança na lista*/
+.support ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*margem entre os elementos da lista*/
+.support ul li {
+    margin: 10px 0;
+}
+
+/* Elementos da lista */
+.support ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+/*Quando se passa rato por cima sublinhar*/
+.support ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos da secção de inscrição */
+
+/*Fonte e margem do titulo "Subscribe"*/
+.subscribe h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/*Estilo do formulario*/
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+.subscribe input {
+    background-color: #D1D1D1;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border: 0.1px solid #cccccc;
+}
+
+/* Retirar borda ao clicar para inserir */
+.subscribe input:focus {
+    outline: none;
+}
+
+/*Botao subcrever*/
+.subscribe button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #D1D1D1;
+    background: #222325;
+    border: none;
+    cursor: pointer;
+}
+
