@@ -1,0 +1,112 @@
+/* Estilo básico para o corpo da página */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #f4f4f4;
+}
+
+header #profileButton img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Estilo para o menu pop-up do perfil */
+.popup {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+    z-index: 100;
+}
+
+.popup-content {
+    padding: 10px;
+    width: 200px;
+}
+
+.popup-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.popup-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para o conteúdo do perfil */
+.profile-container {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.profile-info strong {
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportX | Perfil de Utilizador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Styles_ProfilePage.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/html/index.html"><strong>SPORTX</strong></a>
+        </div>
+        <div>
+            <a href="/html/SearchBrowse.html">Produtos</a>
+            <a href="/html/SearchBrowse.html">Promoções</a>
+            <a href="#" id="searchButton">Pesquisar</a>
+        </div>
+        <div>
+            <a href="ShoppingCart_Page.html"><img src="/img/shopping-cart.jpg" alt="Carrinho de Compras"></a>
+            <a href="#" id="profileButton"><img src="/img/account_circle.jpg" alt="Perfil"></a>
+        </div>
+    </header>
+
+    <!-- Popup Menu -->
+    <div id="profilePopup" class="popup">
+        <div class="popup-content">
+            <a href="/html/profile.html">Perfil</a>
+            <a href="/html/Orderhistory.html">Histórico de Pedidos</a>
+            <a href="/html/ContactUs.html">Contacte-nos</a>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <h1>Bem-vindo ao seu Perfil</h1>
+        <div class="profile-info">
+            <img src="/img/user-avatar.jpg" alt="Avatar de Utilizador">
+            <p><strong>Nome:</strong> João Silva</p>
+            <p><strong>Email:</strong> joao.silva@example.com</p>
+            <p><strong>Telefone:</strong> +351 912 345 678</p>
+        </div>
+    </div>
+
+    <footer>
+        <section class="support">
+            <h2>Support</h2>
+            <ul>
+                <li><a href="ContactUs.html">Contact us</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </section>
+
+        <section class="subscribe">
+            <h2>Subscribe for latest updates</h2>
+            <form action="/subscribe">
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </footer>
+    <script src="/js/PopupSearch.js"></script>
+    <script src="/js/PopupProfile.js"></script>
+</body>
+</html>
