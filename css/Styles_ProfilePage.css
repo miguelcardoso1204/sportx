@@ -2,12 +2,17 @@
     background: #D1D1D1;
 }
 
-html, body {
-    height: 100%; /* Garante que o HTML e o corpo ocupem toda a altura da tela */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
+html,
+body {
+    height: 100%;
+    /* Garante que o HTML e o corpo ocupem toda a altura da tela */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    flex-direction: column;
+    /* Organiza o conteúdo verticalmente */
 }
 
 /* Estilos gerais do corpo */
@@ -74,12 +79,15 @@ header a:hover {
 
 /* Popup Styles profile */
 .popup {
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     position: absolute;
     top: 50px;
     right: 20px;
-    border: 2px solid #4CAF50; /* Aqui estamos adicionando uma borda verde */
-    border-radius: 8px; /* Bordas arredondadas */
+    border: 2px solid #4CAF50;
+    /* Aqui estamos adicionando uma borda verde */
+    border-radius: 8px;
+    /* Bordas arredondadas */
     padding: 15px;
     width: 200px;
     z-index: 1000;
@@ -104,7 +112,8 @@ header a:hover {
 /* Popup Styles search */
 /* Modal styles */
 .modal {
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -112,7 +121,7 @@ header a:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: transparent; 
+    background-color: transparent;
     padding-top: -200px;
 }
 
@@ -120,8 +129,8 @@ header a:hover {
     background-color: transparent;
     margin: -1.5% 35%;
     padding: 20px;
-    width: 80%; 
-    max-width: 400px; 
+    width: 80%;
+    max-width: 400px;
 }
 
 .close:hover,
@@ -148,8 +157,10 @@ input[type="text"] {
 .profile-container h1 {
     text-align: center;
     color: #333;
-    font-size: 28px; /* Aumentar o tamanho do título */
-    font-weight: bold; /* Tornar o título mais destacado */
+    font-size: 28px;
+    /* Aumentar o tamanho do título */
+    font-weight: bold;
+    /* Tornar o título mais destacado */
     margin-bottom: 20px;
     background-color: #ffffff;
 }
@@ -169,14 +180,100 @@ input[type="text"] {
 }
 
 .profile-info strong {
-    color: #218A38; /* Cor mais suave para subtítulos */
+    color: #218A38;
+    /* Cor mais suave para subtítulos */
     font-weight: normal;
     background-color: #ffffff;
 }
 
-.profile-info p:hover{
-    text-decoration: underline; /* Example: Underline the text on hover */
+.profile-info p:hover {
+    text-decoration: underline;
+    /* Example: Underline the text on hover */
 }
+
+#btn_edit_profile {
+    margin-top: 1%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn_edit_profile:hover {
+    background-color: #333;
+}
+
+/* Estilização do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+    /* Alinha os elementos no centro */
+
+}
+
+.modal-content h1 {
+    background-color: white;
+}
+
+
+.modal-content span {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.modal-info {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal-info label {
+    background-color: white;
+}
+
+.modal-info input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+#btn_save_profile {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#btn_save_profile:hover {
+    background-color: #333;
+}
+
 /*--------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------*/
 
 footer {
@@ -259,4 +356,3 @@ footer {
     border: none;
     cursor: pointer;
 }
-

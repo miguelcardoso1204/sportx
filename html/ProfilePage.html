@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/Styles_ProfilePage.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -41,8 +43,34 @@
             <p><strong>Email:</strong> BillGates@example.com</p>
             <p><strong>Address:</strong> Rua dos Anjos 59 , 2300-222</p>
             <p><strong>Phone-number:</strong> +351 911 911 911</p>
+            <button id="btn_edit_profile">Editar</button>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Editar Perfil</h1>
+            <div class="modal-info">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Insira seu nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Insira seu email">
+
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" placeholder="Insira seu endereço">
+
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" placeholder="Insira seu telefone">
+
+                <button id="btn_save_profile">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/ProfileModal.js">
+    </script>
 
     <footer>
         <section class="support">
@@ -64,4 +92,5 @@
     <script src="/js/PopupSearch.js"></script>
     <script src="/js/PopupProfile.js"></script>
 </body>
+
 </html>
